@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <services xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/service-definition-2.1.xsd">
-    <service verb="create" noun="Example" type="entity-auto">
+    <service verb="create" noun="Example" type="entity-auto" authenticate="anonymous-all" allow-remote="true">
         <in-parameters>
             <auto-parameters include="all"></auto-parameters>
         </in-parameters>
-        <out-parameters>
-            <auto-parameters include="pk" required="true"></auto-parameters>
-        </out-parameters>
     </service>
 </services>

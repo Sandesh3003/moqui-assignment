@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/rest-api-3.xsd" name="Example">
+    <resource name="Example" require-authentication="anonymous-all">
+        <method type="get">
+            <entity name="Example" operation="list"/>
+        </method>
+        <method type="post" require-authentication="anonymous-all">
+            <service name="Example.ExampleServices.create#Example"/>
+        </method>
+    </resource>
+</resource>
